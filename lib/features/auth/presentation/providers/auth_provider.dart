@@ -55,8 +55,13 @@ class AuthProvider extends StateNotifier<AuthState> {
       final res = await _repository.login(email, password);
       final token = _repository.extractToken(res);
       await _storage.write(key: 'jwt_token', value: token);
-      final user = UserModel.fromJson(res['user']);
-      state = AuthState(isAuthenticated: true, user: user);
+      if (res['user'] != null) {
+        final user = UserModel.fromJson(res['user']);
+        state = AuthState(isAuthenticated: true, user: user);
+      } else {
+        final user = await _repository.getProfile();
+        state = AuthState(isAuthenticated: true, user: user);
+      }
     } catch (e) {
       state = state.copyWith(isLoading: false, error: 'Login gagal');
     }
