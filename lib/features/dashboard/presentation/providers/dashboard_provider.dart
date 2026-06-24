@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../data/dashboard_repository.dart';
+import '../../data/dashboard_repository.dart';
 
 class DashboardState {
   final Map<String, dynamic>? data;

@@ -1,0 +1,1 @@
+/home/fathir/tukang-on/build/app/intermediates/cxx/Debug/26x113h2/obj/arm64-v8a
