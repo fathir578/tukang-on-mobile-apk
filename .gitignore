@@ -76,6 +76,16 @@ build/
 *.iml
 .metadata
 
+# --- Android specific ---
+android/.gradle/
+android/key.properties
+android/app/*.jks
+android/app/*.keystore
+
+# --- iOS specific ---
+ios/Pods/
+ios/.symlinks/
+
 # --- Misc ---
 *.tar.gz
 *.zip
