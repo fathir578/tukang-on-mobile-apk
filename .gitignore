@@ -1,0 +1,83 @@
+# --- Environment & Secrets ---
+.env
+.env.local
+.env.production
+.env.backup
+env.sh
+android/local.properties
+*.key
+*.jks
+*.keystore
+secrets.*
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# --- IDE ---
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.history/
+.settings/
+.project
+.classpath
+
+# --- Logs ---
+*.log
+npm-debug.log*
+
+# --- Build Outputs ---
+build/
+*.apk
+*.aab
+*.app
+*.ipa
+*.dSYM.zip
+*.dSYM
+flutter_*.png
+coverage/
+*.js.map
+
+# --- Dependencies ---
+vendor/
+node_modules/
+.pub-cache/
+.packages
+.pub/
+build/
+.dart_tool/
+.cocoapods/
+
+# --- Laravel specific ---
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/framework/testing/*
+/storage/logs/*
+/storage/app/private/*
+/storage/app/public/*
+/public/hot
+/public/storage
+public/build
+/bootstrap/cache/packages.php
+/bootstrap/cache/services.php
+
+# --- Flutter specific ---
+.packages
+.pub/
+.dart_tool/
+build/
+*.iml
+.metadata
+
+# --- Misc ---
+*.tar.gz
+*.zip
+.docker/
+docker-compose.override.yml
