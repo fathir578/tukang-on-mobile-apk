@@ -42,7 +42,7 @@ class AuthController extends Controller implements HasMiddleware
             ], 401);
         }
 
-        $user = auth('api')->user();
+        $user = JWTAuth::setToken($token)->toUser();
         return $this->respondWithToken($token, $user);
     }
 
