@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../domain/tukang_model.dart';
+import '../domain/tukang_model.dart';
 import '../data/tukang_repository.dart';
 import 'providers/tukang_provider.dart';
 

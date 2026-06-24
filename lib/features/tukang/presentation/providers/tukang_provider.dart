@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../domain/tukang_model.dart';
-import '../data/tukang_repository.dart';
+import '../../data/tukang_repository.dart';
 
 class TukangState {
   final List<TukangModel> tukangList;
